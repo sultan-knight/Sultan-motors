@@ -18,9 +18,39 @@
 
     <h2>Mercedes-Benz E200 4MATIC</h2>
 
-    <img src="./mercedes benz.jpeg"
-         alt="Mercedes-Benz E200 4MATIC"
-         class="details-image">
+   <div class="gallery">
+
+<img
+id="mainImage"
+src="./mercedes benz.jpeg"
+class="main-image"
+alt="Mercedes-Benz E200">
+
+<div class="thumbnail-container">
+
+<img src="./mercedes benz.jpeg"
+class="thumbnail"
+onclick="changeImage(this.src)">
+
+<img src="./benz1.jpeg"
+class="thumbnail"
+onclick="changeImage(this.src)">
+
+<img src="./benz2.jpeg"
+class="thumbnail"
+onclick="changeImage(this.src)">
+
+<img src="./benz3.jpeg"
+class="thumbnail"
+onclick="changeImage(this.src)">
+
+<img src="./benz4.jpeg"
+class="thumbnail"
+onclick="changeImage(this.src)">
+
+</div>
+
+</div>
 
     <div class="specs">
 
@@ -72,6 +102,12 @@
     </a>
 
 </section>
+
+<script>
+function changeImage(image){
+    document.getElementById("mainImage").src = image;
+}
+</script>
 
 </body>
 </html>
