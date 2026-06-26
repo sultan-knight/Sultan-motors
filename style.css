@@ -486,4 +486,44 @@ footer {
 .back-btn:hover{
     background: white;
 }
+
+/* Vehicle Gallery */
+
+.gallery{
+    margin-top: 30px;
+}
+
+.main-image{
+    width: 100%;
+    max-width: 700px;
+    height: 420px;
+    object-fit: cover;
+    border-radius: 12px;
+    border: 3px solid gold;
+    display: block;
+    margin: auto;
+}
+
+.thumbnail-container{
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.thumbnail{
+    width: 110px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 2px solid gold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.thumbnail:hover{
+    transform: scale(1.08);
+    border-color: white;
+}
  
