@@ -17,8 +17,30 @@
 
 <h2>Mazda Axela Sports</h2>
 
-<img src="./mazda axela.jpeg" alt="Mazda Axela" class="details-image">
+<div class="gallery">
 
+<img
+id="mainImage"
+src="./mazda axela.jpeg"
+class="main-image"
+alt="Mazda Axela">
+
+<div class="thumbnail-container">
+
+<img src="./mazda axela.jpeg" class="thumbnail" onclick="changeImage(this.src)">
+<img src="./Axela s.wheel.jpeg" class="thumbnail" onclick="changeImage(this.src)">
+<img src="./Axela milage.jpeg" class="thumbnail" onclick="changeImage(this.src)">
+<img src="./Axela window control.jpeg" class="thumbnail" onclick="changeImage(this.src)">
+<img src="./Axela frontseat.jpeg" class="thumbnail" onclick="changeImage(this.src)">
+<img src="./Axela backseat.jpeg" class="thumbnail" onclick="changeImage(this.src)">
+<img src="./Axela back view.jpeg" class="thumbnail" onclick="changeImage(this.src)">
+
+
+
+
+</div>
+
+</div>
 <div class="specs">
 
 <h3>🚗 Vehicle Information</h3>
@@ -57,6 +79,12 @@
 </a>
 
 </section>
+
+<script>
+function changeImage(image){
+    document.getElementById("mainImage").src = image;
+}
+</script>
 
 </body>
 </html>

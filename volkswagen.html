@@ -17,8 +17,28 @@
 
 <h2>Volkswagen Tiguan</h2>
 
-<img src="./volkswagen.jpeg" alt="Volkswagen Tiguan" class="details-image">
+<div class="gallery">
 
+<img
+id="mainImage"
+src="./Volks front view.jpeg"
+class="main-image"
+alt="Volkswagen Tiguan">
+
+<div class="thumbnail-container">
+
+<img src="./Volks frontseat.jpeg" class="thumbnail" onclick="changeImage(this.src)">
+<img src="./Volks window control.jpeg" class="thumbnail" onclick="changeImage(this.src)">
+<img src="./Volks gear stick.jpeg" class="thumbnail" onclick="changeImage(this.src)">
+<img src="./volks milage.jpeg" class="thumbnail" onclick="changeImage(this.src)">
+<img src="./Volks backseat.jpeg" class="thumbnail" onclick="changeImage(this.src)">
+<img src="./Volks boot.jpeg" class="thumbnail" onclick="changeImage(this.src)">
+
+
+
+</div>
+
+</div>
 <div class="specs">
 
 <h3>🚗 Vehicle Information</h3>
@@ -51,6 +71,12 @@
 </a>
 
 </section>
+
+<script>
+function changeImage(image){
+    document.getElementById("mainImage").src = image;
+}
+</script>
 
 </body>
 </html>

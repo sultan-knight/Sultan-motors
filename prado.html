@@ -18,9 +18,35 @@
 
     <h2>Toyota Prado TX</h2>
 
-    <img src="./Prado tx.jpg"
-         alt="Toyota Prado TX"
-         class="details-image">
+    <div class="gallery">
+
+<img
+id="mainImage"
+src="./Prado tx.jpg"
+class="main-image"
+alt="Toyota Prado TX">
+
+<div class="thumbnail-container">
+
+<img src="./Tx1.jpeg"
+class="thumbnail"
+onclick="changeImage(this.src)">
+
+<img src="./Tx2.jpeg"
+class="thumbnail"
+onclick="changeImage(this.src)">
+
+<img src="./Tx3.jpeg"
+class="thumbnail"
+onclick="changeImage(this.src)">
+
+<img src="./Tx4.jpeg"
+class="thumbnail"
+onclick="changeImage(this.src)">
+
+</div>
+
+</div>
 
     <div class="specs">
 
@@ -93,6 +119,12 @@
     </a>
 
 </section>
+
+<script>
+function changeImage(image){
+    document.getElementById("mainImage").src = image;
+}
+</script>
 
 </body>
 </html>

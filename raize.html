@@ -18,9 +18,28 @@
 
     <h2>Toyota Raize</h2>
 
-    <img src="./Toyota raize.jpeg"
-         alt="Toyota Raize"
-         class="details-image">
+    <div class="gallery">
+
+<img
+id="mainImage"
+src="./Toyota raize.jpeg"
+class="main-image"
+alt="Toyota Raize">
+
+<div class="thumbnail-container">
+
+<img src="./Toyota raize.jpeg" class="thumbnail" onclick="changeImage(this.src)">
+<img src="./Raize s.wheel.jpeg" class="thumbnail" onclick="changeImage(this.src)">
+<img src="./Raize milage.jpeg" class="thumbnail" onclick="changeImage(this.src)">
+<img src="./Raize window control.jpeg" class="thumbnail" onclick="changeImage(this.src)">
+<img src="./Raize boot.jpeg" class="thumbnail" onclick="changeImage(this.src)">
+<img src="./Raize back view.jpeg" class="thumbnail" onclick="changeImage(this.src)">
+
+
+
+</div>
+
+</div>
 
     <div class="specs">
 
@@ -61,6 +80,12 @@
     </a>
 
 </section>
+
+<script>
+function changeImage(image){
+    document.getElementById("mainImage").src = image;
+}
+</script>
 
 </body>
 </html>
