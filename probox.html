@@ -17,8 +17,32 @@
 
 <h2>Toyota Probox</h2>
 
-<img src="./Toyota probox.jpeg" alt="Toyota Probox" class="details-image">
+<div class="gallery">
 
+<img
+id="mainImage"
+src="./Toyota probox.jpeg"
+class="main-image"
+alt="Toyota Probox">
+
+<div class="thumbnail-container">
+
+<img src="./Toyota probox.jpeg" class="thumbnail" onclick="changeImage(this.src)">
+<img src="./probox front view.jpeg" class="thumbnail" onclick="changeImage(this.src)">
+<img src="./Probox s.wheel.jpeg" class="thumbnail" onclick="changeImage(this.src)">
+<img src="./Probox milage.jpeg" class="thumbnail" onclick="changeImage(this.src)">
+<img src="./Probox dashboard.jpeg" class="thumbnail" onclick="changeImage(this.src)">
+<img src="./Probox alloy rim.jpeg" class="thumbnail" onclick="changeImage(this.src)">
+<img src="./Probox backseat.jpeg" class="thumbnail" onclick="changeImage(this.src)">
+<img src="./Probox boot.jpeg" class="thumbnail" onclick="changeImage(this.src)">
+
+
+
+
+
+</div>
+
+</div>
 <div class="specs">
 
 <h3>🚗 Vehicle Information</h3>
@@ -51,6 +75,12 @@
 </a>
 
 </section>
+
+<script>
+function changeImage(image){
+    document.getElementById("mainImage").src = image;
+}
+</script>
 
 </body>
 </html>
